@@ -1,5 +1,7 @@
 # termchrome
 
+> **Part of [termsystem](https://github.com/0xbenc/termsystem)** — the shared terminal-UI ecosystem (`termtheme` · `termnav` · `termchrome` · `termintro` powering `passage` · `ssherpa` · `dangit`). The ecosystem map, dependency graph, and the agent guide ([AGENTS.md](https://github.com/0xbenc/termsystem/blob/main/AGENTS.md)) live there.
+
 Shared, opinionated TUI **chrome widgets** for sibling terminal apps
 ([passage](https://github.com/0xbenc/passage),
 [ssherpa](https://github.com/0xbenc/ssherpa), …): rounded box geometry, a
