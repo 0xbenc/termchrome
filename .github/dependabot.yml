@@ -1,0 +1,28 @@
+version: 2
+
+updates:
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: weekly
+    # Direct deps only: indirect modules must move together with their
+    # direct parent, not independently.
+    allow:
+      - dependency-type: direct
+    groups:
+      go-deps:
+        patterns:
+          - "*"
+        update-types:
+          - patch
+          - minor
+    ignore:
+      # Majors are taken deliberately, never via automation.
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
